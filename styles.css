@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 56px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.logo img {
+    width: 125px;
+    height: 32px;
+}
+
+.middle-menu a, .right-menu img {
+   margin: 0 10px;
+}
+
+.middle-menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.right-menu img {
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+}
+
+.model-3 {
+    background-image: url('./Assets/Model3img.avif');
+    background-size: cover;
+    background-position: center;
+    height: 387.458px;
+    width: 1264.67px;
+}
+
+.model-y {
+    background-image: url('./Assets/ModelYimg.avif');
+    background-size: cover;
+    background-position: center;
+    height: 387.458px;
+    width: 1264.67px;
+}
+
+.slides-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.models-area {
+    display: flex;
+    transition: transform 3s ease-in-out;
+    transform: translateX(-100%);
+    animation: slide-1 10s infinite;
+}
+
+@keyframes slide-1 {
+    0%, 45% { transform: translateX(0); }
+    50%, 95% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+.model-3, .model-y {
+    min-width: 100%;
+}
+h1, h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+h1 {
+    font-weight: 500;
+    font-size: 50px;
+    padding-top: 56px;
+}
+
+h2 {
+    text-decoration: underline;
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.btns button {
+    margin: 0 5px;
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.blue-btn {
+    background-color: #3457b1;
+    color: white;
+}
+
+.white-btn {
+    background-color: white;
+    color: black;;
+}
+
+.abt-1 h1 {
+    font-weight: 500;
+    font-size: 50px;
+    padding-top: 56px;
+    padding-left: 15px;
+    display: flex;
+    align-items: left;
+    background: linear-gradient(
+        90deg,
+        #5b6cff,
+        #3b82f6,
+        #6b8cff
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.abt-1 p {
+    display: flex;
+    align-items: left;
+    padding-left: 15px;
+    font-size: 15px;
+    padding-top: 5px;
+    color: rgb(92, 94, 98);
+}
+
+.abt-2 h1 {
+    font-weight: 500;
+    font-size: 50px;
+    padding-top: 56px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    color: #000;
+}
+
+p {
+    font-size: 15px;
+    padding-top: 5px;
+    color: rgb(92, 94, 98);
+}
+
+.abt-2 {
+    display: flex;
+    align-items: left;
+    margin: 0 20px;
+}
+
+.coll-text, .miles {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0 10px;
+}
+
+.company-info {
+    margin: 0 20px;
+    display: flex;
+    width: 1168.67px;
+    height: 394.427px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}    
+.info-text {
+    background-color: #d2caca7e;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.info-vid video {
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    background-color: transparent;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-right: 20px;
+}
+
+.company-info h1 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.company-info p {
+    font-size: 14px;
+    padding-top: 5px;
+    color: rgb(92, 94, 98);
+}
+
+
+
+
+.model-3-info {
+    background-image: url('./Assets/Homepage-Card-Model-3-Desktop-US_PR_MX.avif');
+}
+
+.model-y-info {
+    background-image: url('./Assets/Homepage-Vehicle-Card-Model-Y-Desktop-US-Snow.avif');
+}
+
+.cyber-truck {
+    background-image: url('./Assets/Homepage-Card-Cybertruck-Desktop-US_PR_MX.avif');
+}
+
+
+
+.model-3-info, .cyber-truck, .model-y-info {
+    flex: 0 0 700px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-left: 20px;
+    gap: 20px;
+    padding-bottom: 40px;
+    transition: transform 3s ease-in-out;
+    transform: translateX(-100%);
+    animation: slide-2 10s infinite;
+}
+
+.info-slides {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-left: 50px;
+    padding-top: 40px;  
+}
+
+@keyframes slide-2 {
+    0%, 30% {
+        transform: translateX(0);
+    }
+    35%, 60% {
+        transform: translateX(-100%);
+    }
+    65%, 90% {
+        transform: translateX(-135%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.model-text img {
+    display: flex;
+    align-items: left;
+    width: 125px;
+    height: 80px;
+    margin-top: 38px;
+}
+
+.model-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.model-text h2 {
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.model-btns button {
+    margin: 0;
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.model-btns {
+    padding-left: 20px;
+}
+
+
+
+
+.top-text h2 {
+    text-decoration: none;
+    padding-bottom: 200px;
+    padding-left: 20px;
+    font-weight: 450px;
+}
+
+.footer-sect {
+    width: 100vw;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-items {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(92, 94, 98);
+}
